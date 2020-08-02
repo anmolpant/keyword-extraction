@@ -40,13 +40,15 @@ def spider(name,url, found_titles, found):
     
     except UnicodeEncodeError:
         pass
-    except urllib3.HTTPError:
-        pass
+    #except urllib3.HTTPError:
+        #pass
     except ValueError:
         pass
     except IndexError:
         pass
-    except urllib3.URLError:
+    #except urllib3.URLError:
+        #pass
+    except:
         pass
     
 
