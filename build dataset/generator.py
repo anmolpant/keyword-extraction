@@ -34,11 +34,26 @@ def spider(name,url, found_titles, found):
 
         for a in soup.select('a[href]'):
             b = a['href'].replace('#replies', '')
-            if 'http://' + name +'.com' in b and b not in found:
+            if 'https://' + name +'.com' in b and b not in found:
                 found.append(b)
                 spider(name, b, found_titles, found)
     
-
+    except UnicodeEncodeError:
+        pass
+    except urllib3.HTTPError:
+        pass
+    except ValueError:
+        pass
+    except IndexError:
+        pass
+    except urllib3.URLError:
+        pass
+    
 
 def main():
-    name
+    name     = 'lifehacker'
+    start_url = "https://lifehacker.com/im-doordash-ceo-tony-xu-and-this-is-how-i-work-1821196705"
+    spider(name, start_url, [], [start_url])
+
+if __name__ == "__main__":
+    main()
