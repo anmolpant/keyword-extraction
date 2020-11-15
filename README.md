@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-<img src="" alt="pic"/>
+<img src="https://github.com/anmolpant/keyword-extraction/blob/master/assets/1_ru-c07OSF36e3wuXka8urQ.jpeg" alt="pic"/>
 </p>
 
 ![Generic badge](https://img.shields.io/badge/Keyword-Extraction-blue)
